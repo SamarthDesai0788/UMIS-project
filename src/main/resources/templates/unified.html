@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UMIS</title>
+ <div class="logo"><img src="logo.jpg"><img></div>
+    <style>
+
+  *
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+body,html{
+	font-family:Arial (sans-serif) Verdana (sans-serif) Tahoma (sans-serif);
+	background:#201e3e;
+font-size: 25px;
+    
+}
+
+
+
+
+.width-100{
+	width:100%;
+	float: left;
+	
+}
+
+.container{
+	width: auto;
+	margin:auto auto;
+	
+}
+.container a{
+	color:rgb(255, 255, 255);
+	text-decoration: none;
+	
+}
+.container a:hover{
+	color:rgb(255, 128, 0);
+	
+}
+.top-header{
+	    background: rgb(128, 0, 128);
+    padding: 5px 0px;
+    border-bottom: 1px solid #3131315e;
+}
+.news-list{
+	    background: rgb(255, 0, 0);
+    color: rgb(128, 255, 255);
+    padding: 8px;
+    font-size: 20px;
+}
+.headquote{
+	font-size:18px;
+	color:#fff;
+	width:90%;
+}
+.header-menu{
+	position: relative;
+	box-shadow: 0px 2px 5px 0px #00000036;
+	background-color: rgba(172, 59, 103, .9);
+	
+}
+.logo{
+	width: fit-content;
+	float: left;
+	
+}
+.main-menu{
+	list-style: none;
+	float: right;
+	margin-top:20px ;
+	
+	
+}
+.main-menu a{
+	font-weight: 500;
+	color: #3a3a3a;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+.main-menu li{
+	float: left;
+	padding: 12px 15px;
+	
+	
+}
+.slider-width{
+	width:100%;
+	height: auto;
+}
+
+
+.margin-top-50{
+	margin-top:50px;
+}
+.width-33{
+	width: 33%;
+	float: left;
+}
+
+.latest-news{
+	margin-left: 10px;
+	margin-right: 10px;
+	background: rgb(196, 255, 255);
+	padding: 20px;
+	height: 400px;
+	margin-bottom:30px ;
+}
+.heading-sect{
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #cfcfcf;
+padding-bottom: 0px;
+margin:0px;
+margin-bottom: 15px;
+padding-left: 2px;
+border: 1px solid #cfcfcf;
+padding-top: 15px;
+padding-left: 15px;
+background:rgb(164, 0, 0) ;
+color: rgb(0, 0, 0);
+}
+.heading-title{
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	font-weight:600 ;
+	padding-bottom: 5px;
+	
+}
+.latest-news-ul{
+	padding: 0px;
+	list-style: none;
+	line-height: 40px;
+}
+.event-list{
+	margin-left: 10px;
+	margin-right: 10px;
+	background: rgb(196, 255, 255);
+	padding: 20px;
+	height: 400px;
+	margin-bottom:30px ;
+	
+}
+.upcoming-event-list{
+	padding: 0px;
+	list-style: none;
+}
+.upcoming-event-list li{
+	width: 100%;
+	float: left;
+margin-bottom: 15px;
+}
+.event-date{
+	background: #03a9f4;
+	width: 30px;
+	float: left;
+text-align: center;
+font-size: 14px;
+color: #fff;
+padding: 8px;
+margin-right: 10px;	
+	}
+.notice-board{
+	margin-left: 10px;
+	margin-right: 10px;
+	background: rgb(196, 255, 255);
+	padding: 20px;
+	height: 400px;
+	margin-bottom:30px ;
+}
+.notice-board-list{
+	padding: 0px;
+	list-style: none;
+	line-height: 40px;
+}
+.notice-board-list ul{
+	padding: 0px;
+	list-style: none;
+	line-height: 40px;
+}
+.notice-board-list li{
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+.footer{
+	background: #232f3e;
+	padding: 50px 10px;
+}
+.quicklink-heading{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.quicklink-menu{
+	list-style: none;
+	padding-left: 10px;
+	
+}
+.quicklink-menu li a{
+	color: #fff;
+	line-height: 2.5;
+	font-size: 15px;
+	text-decoration: none;
+	
+}
+.width-25{
+	width: 25%;
+	float: left;
+	
+}
+.get-in-touch{
+	list-style: none;
+	padding-left: 10px;
+}
+.get-in-touch li i{
+	color: #ed372c;
+font-size: 20px;
+}
+.get-in-touch li{
+	color: #fff;
+	line-height: 2.5;
+	font-size: 15px;
+}
+.footer-e-mail{
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.footer-website{
+	font-size:15px ;
+font-weight: bold;
+color: #fff;
+text-decoration: none;
+}
+ .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px; /* Add margin between dropdowns */
+        }
+        .dropdown a{
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+		}
+
+        .dropdown-content {
+			border-radius: 15px;
+            display: none;
+            position: absolute;
+            background-color: rgba(172, 59, 103, .9);
+            min-width: 90px;
+            z-index: 1;
+            left: 0; /* Ensure dropdown appears below the link */
+            top: 100%; /* Position dropdown below the link */
+            font-family:sans-serif;
+        }
+
+        .dropdown-content a {
+         color: rgb(255, 255, 255);
+            padding: 16px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+       
+
+        
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+        nav .container {
+            display: table;
+            align-items: center;
+        }
+
+        nav .container .logo {
+            margin-right: auto;
+        }
+
+        nav .container .dropdown {
+            margin-right: 30px;
+        }
+        
+
+.social-icons {
+    position: absolute;
+    top: 20px; /* Adjust this value as needed */
+    right: 20px; /* Adjust this value as needed */
+    z-index: 9999; /* Ensure it appears above other elements */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Add some space between icons */
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <div class="width-100 top-header">
+        <div class="container">
+            <div class="width-100">
+                <b class="news-list">Alert</b>
+                <marquee class="headquote">UMIS :Let us remember: One book, one pen, one child, and one teacher can change the world.
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="width-100 header-menu">
+            <div class="container">
+               
+                <div class="dropdown">
+                    
+                    <a href="#"><b>ABOUT US</b></a>
+
+                    <div class="dropdown-content">
+                        <a href="/overview">Overview</a>
+                        <a href="Other committee">Other committee</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    
+                    <a href="#"><b>RESEARCH</b></a>
+                    <div class="dropdown-content">
+                       <a href="/register">Student Register</a>
+                        <a href="/admin">Admin Register</a>
+                       
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link"><b>ACADEMICS</b></a>
+                    <div class="dropdown-content">
+                        <a href="UG programs">UG programs</a>
+                        <a href="PG programs">PG programs</a>
+                        <a href="Academic details">Academic details</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link"><b>EXAMINATION</b></a>
+                    <div class="dropdown-content">
+                        <a href="Examination Guidelines">Examination Guidelines</a>
+                        <a href="Exam Application">Exam Application</a>
+                        <a href="Exam Circular & Notification">Exam Circular & Notification</a>
+                        <a href="Result">Result</a>
+                        <a href="Examination Time Table">Examination Time Table</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link"><b>FACILITIES</b></a>
+                    <div class="dropdown-content">
+                        <a href="Hostel">Hostel</a>
+                        <a href="Internet center">Internet center</a>
+                        <a href="Academic details">Academic details</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link"><b>DEPARTMENTS</b></a>
+                    <div class="dropdown-content">
+                        <a href="Aerospace engineering">Aerospace engineering</a>
+                        <a href="Applied science">Applied science</a>
+                        <a href="Computer science">Computer science</a>
+                        <a href="Chemical engineering">Chemical engineering</a>
+                        <a href="Civil engineering">Civil engineering</a>
+                        <a href="Electrical engineering">Electrical engineering</a>
+                        <a href="Electronics & communication engineering">Electronics & communication engineering</a>
+                        <a href="Mechanical engineering">Mechanical engineering</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link"><b>OTHERS</b></a>
+                    <div class="dropdown-content">
+                        <a href="Events">Events</a>
+                        <a href="Student information system">Student information system</a>
+                        <a href="Staff information system">Staff information system</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="width-100">
+        <img class="slider-width" src="Capture.JPG">
+    </div>
+      
+    <div class="width-100 margin-top-50">
+        <div class="container">
+            <div class="width-33">
+                <div class="latest-news">
+                    <div class="heading-sect">
+                        <h3 class="head-title"><bb>Latest News</b></h3>
+                    </div>
+                    <marquee direction="up">
+                        <ul class="latest-news-ul">
+                            <li> March 2024 merit list part 01_16 feb 2024<img src="new.logo.gif"></li>
+                            <li>15 April 2024 merit list part 01_16 feb 2024<img src="new.logo.gif"></li>
+                            <li>20 April 2024 Incubation Center<img src="new.logo.gif"></li>
+                            <li>10 May 2024 Institutional Distinctiveness<img src="new.logo.gif"></li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+
+
+            <div class="width-33">
+                <div class="event-list">
+                    <div class="heading-sect">
+                        <h3 class="head-title"><b>Upcoming Events</b></h3>
+                    </div>
+                    <ul class="upcoming-event-list">
+                        <li><span class="event-date">29 <br>April</span><span>Seminar is conducted on MBA
+                                courses.</span></li>
+                        <li><span class="event-date">14 <br> May</span><span>Seminar is conducted on BE
+                                courses.</span></li>
+                        <li><span class="event-date">10 <br> June</span><span>Seminar is conducted on MBBS
+                                courses.</span></li>
+                        <li><span class="event-date">05 <br> July</span><span>Seminar is conducted on BCS
+                                courses.</span></li>
+                        <li><span class="event-date">28 <br>Jan</span><span>Seminar is conducted on BSc
+                                courses.</span></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="width-33">
+                <div class="notice-board">
+                    <div class="heading-sect">
+                        <h3 class="head-title"><b>Notice Board</b></h3>
+                    </div>
+
+                    <ul class="Notice-Board-List"></ul>
+                    <marquee direction="up">
+                        <li> Participation in climate correction day challenge for mission life</li><br>
+                        <li>Participation in state level Mission Life</li><br>
+                        <li>PHD Registration form for selected candidates</li><br>
+                        <li>participation in Table Tensis</li><br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="width-100 margin-top-50 footer">
+        <div class="container">
+            <div class="width-25">
+                <h2 class="quicklink-heading">Quick Links</h2>
+                <ul class="quicklink-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="width-25">
+                <h2 class="quicklink-heading">Student Section</h2>
+                <ul class="quicklink-menu">
+                    <li><a href="#">Result</a></li>
+                    <li><a href="#">Pay Fee</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Placements</a></li>
+                </ul>
+            </div>
+            <div class="width-25">
+                <h2 class="quicklink-heading">Information Links</h2>
+                <ul class="quicklink-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">R&D Policy</a></li>
+                    <li><a href="#">Anti-Ragging</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+            </div>
+            <div class="width-25">
+                <h2 class="quicklink-heading">GET IN TOUCH</h2>
+                <ul class="get-in-touch">
+                    <li><i class="fa fa-envelope-o"></i> E-MAIL:<a href="#" class="footer-e-mail">umis@gmail.com</a></li>
+                    <li><i class="fa fa-whatsapp"></i> WHATS-APP:+91-7676946767</li>
+                    <li><i class="fa fa-fax"></i> CONTACT NO.:+91-(123)-4567890</li>
+                    <li><i class="fa fa-globe"></i> WEBSITE:<a href="#" class="footer-website">https://www.umis.com</a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="social-icons">
+    <a href="https://www.linkedin.com/login" class="fa fa-linkedin"></a>
+    <a href="https://www.facebook.com/login/" class="fa fa-facebook"></a>
+    <a href="https://wa.me/yourphonenumber" class="fa fa-whatsapp"></a>
+    <a href="https://twitter.com/login" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a> <!-- Add Instagram icon -->
+</div>
+
+</body>
+
+</html>

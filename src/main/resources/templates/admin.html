@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Register</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: rgb(173, 12, 72);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+}
+
+h1 {
+    color: rgb(255, 128, 192);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Ensure each label is on a new line */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Make input fields fill the entire width */
+    padding: 10px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Admin Registration</h1>
+    <form action="/adminregister" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+        </div>
+        <div class="form-group">
+            <label for="head_of_the_departmentt">Head of the Department:</label>
+            <input type="text" id="headOfTheDepartment" name="departmentHead" placeholder="Enter Department Head">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Register" class="btn-register">
+        </div>
+    </form>
+    <p class="text-center mt-3">Already have an account? <a href="/login">Login here</a>.</p>
+    
+</div>
+</body>
+</html>
